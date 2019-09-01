@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  display:flex; 
+  flex-direction:column; 
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.google_map {
+  position: relative !important;
+  width:850px !important;
+  height:450px !important;
+}
+
+.myInput {
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.myUL {
+  position: relative;
+  /* Remove default list styling */
+  list-style-type: none;
+  top: -1.25vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+@media only screen and (max-height: 1024px) {
+  .myUL {
+    position: relative;
+    /* Remove default list styling */
+    list-style-type: none;
+    top: -1.95vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 780px) {
+  .myUL {
+    position: relative;
+    /* Remove default list styling */
+    list-style-type: none;
+    top: -2.05vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+.myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+.h-100 {
+  clear: both;
+  height: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100px;
+  background:#ccc;
+}
+
+@media only screen and (max-width: 1920px) {
+  footer {
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+    background:#ccc;
+  }
+}
